@@ -55,6 +55,7 @@ export const Button = styled.button`
 `;
 
 export const Page = styled.div<PageProps>`
+ background-color: #1a1a1a;
  height: 100%;
  display: ${(props) => props.display};
  justify-content: ${(props) => props.justifyContent};
@@ -73,7 +74,11 @@ export const ConversationSideBarStyle = styled.aside`
  border-right: 1px solid #545454;
  overflow-y: scroll;
  &::-webkit-scrollbar {
-   display: none;
+   width: 10px;
+   height: 5px;
+ }
+ &::-webkit-scrollbar-thumb {
+   background-color: #fff;
  }
 `;
 
@@ -108,7 +113,7 @@ export const ConversationSidebarItem = styled.div`
  display: flex;
  align-items: center;
  gap: 20px;
- padding: 16px 0;
+ padding: 18px 32px;
  box-sizing: border-box;
  border-bottom: 1px solid #545443d;
  background-color: #131313;
